@@ -1,0 +1,196 @@
+[
+    {
+        "0" : {
+            "name" : "Black Tower 1",
+            "row" : 2,
+            "col" : 2,
+            "figure" : "blackTower"
+        },
+        "1" : {
+            "name" : "Black Horse 1",
+            "row" : 2,
+            "col" : 3,
+            "figure" : "blackHorse"
+        },
+        "2" : {
+            "name" : "Black Elephant 1",
+            "row" : 2,
+            "col" : 4,
+            "figure" : "blackElephant"
+        },
+        "3" : {
+            "name" : "Black King",
+            "row" : 2,
+            "col" : 5,
+            "figure" : "blackKing"
+        },
+        "4" : {
+            "name" : "Black Queen",
+            "row" : 2,
+            "col" : 6,
+            "figure" : "blackQueen"
+        },
+        "5" : {
+            "name" : "Black Elephant 2",
+            "row" : 2,
+            "col" : 7,
+            "figure" : "blackElephant"
+        },
+        "6" : {
+            "name" : "Black Horse 2",
+            "row" : 2,
+            "col" : 8,
+            "figure" : "blackHorse"
+        },
+        "7" : {
+            "name" : "Black Tower2",
+            "row" : 2,
+            "col" : 9,
+            "figure" : "blackTower"
+        },
+        "8" : {
+            "name" : "Black Pawn 1",
+            "row" : 3,
+            "col" : 2,
+            "figure" : "blackPawn"
+        },
+        "9" : {
+            "name" : "Black Pawn 2",
+            "row" : 3,
+            "col" : 3,
+            "figure" : "blackPawn"
+        },
+        "10" : {
+            "name" : "Black Pawn 3",
+            "row" : 3,
+            "col" : 4,
+            "figure" : "blackPawn"
+        },
+        "11" : {
+            "name" : "Black Pawn 4",
+            "row" : 3,
+            "col" : 5,
+            "figure" : "blackPawn"
+        },
+        "12" : {
+            "name" : "Black Pawn 5",
+            "row" : 3,
+            "col" : 6,
+            "figure" : "blackPawn"
+        },
+        "13" : {
+            "name" : "Black Pawn 6",
+            "row" : 3,
+            "col" : 7,
+            "figure" : "blackPawn"
+        },
+        "14" : {
+            "name" : "Black Pawn 7",
+            "row" : 3,
+            "col" : 8,
+            "figure" : "blackPawn"
+        },
+        "15" : {
+            "name" : "Black Pawn 8",
+            "row" : 3,
+            "col" : 9,
+            "figure" : "blackPawn"
+        },
+        "16" : {
+            "name" : "White Tower 1",
+            "row" : 9,
+            "col" : 2,
+            "figure" : "whiteTower"
+        },
+        "17" : {
+            "name" : "White Horse 1",
+            "row" : 9,
+            "col" : 3,
+            "figure" : "WhiteTower"
+        },
+        "18" : {
+            "name" : "White Elephant 1",
+            "row" : 9,
+            "col" : 4,
+            "figure" : "whiteElephant"
+        },
+        "19" : {
+            "name" : "White King",
+            "row" : 9,
+            "col" : 5,
+            "figure" : "whiteKing"
+        },
+        "20" : {
+            "name" : "White Queen",
+            "row" : 9,
+            "col" : 6,
+            "figure" : "whiteQueen"
+        },
+        "21" : {
+            "name" : "White Elephant 2",
+            "row" : 9,
+            "col" : 7,
+            "figure" : "whiteElephant"
+        },
+        "22" : {
+            "name" : "White Horse 2",
+            "row" : 9,
+            "col" : 8,
+            "figure" : "whiteHorse"
+        },
+        "23" : {
+            "name" : "White Tower2",
+            "row" : 9,
+            "col" : 9,
+            "figure" : "whiteTower"
+        },
+        "24" : {
+            "name" : "White Pawn 1",
+            "row" : 8,
+            "col" : 2,
+            "figure" : "whitePawn"
+        },
+        "25" : {
+            "name" : "White Pawn 2",
+            "row" : 8,
+            "col" : 3,
+            "figure" : "whitePawn"
+        },
+        "26" : {
+            "name" : "White Pawn 3",
+            "row" : 8,
+            "col" : 4,
+            "figure" : "whitePawn"
+        },
+        "27" : {
+            "name" : "White Pawn 4",
+            "row" : 8,
+            "col" : 5,
+            "figure" : "whitePawn"
+        },
+        "28" : {
+            "name" : "White Pawn 5",
+            "row" : 8,
+            "col" : 6,
+            "figure" : "whitePawn"
+        },
+        "29" : {
+            "name" : "White Pawn 6",
+            "row" : 8,
+            "col" : 7,
+            "figure" : "whitePawn"
+        },
+        "30" : {
+            "name" : "White Pawn 7",
+            "row" : 8,
+            "col" : 8,
+            "figure" : "whitePawn"
+        },
+        "31" : {
+            "name" : "White Pawn 8",
+            "row" : 8,
+            "col" : 9,
+            "figure" : "whitePawn"
+        }
+    }
+]

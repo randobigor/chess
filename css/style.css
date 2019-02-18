@@ -2,10 +2,11 @@
     z-index: 0;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-	background: gray;
 	width: 530px;
     text-align: center;
+    margin: auto;
 }
+
 .position{
 	width: 50px; 
 	height: 50px;
@@ -20,83 +21,89 @@
 	background-color: black;
 }
 
+.corners{
+    background: darkslategray;
+    color: white;
+    font-size: 1.5rem;
+}
+
 /* CHESS PIECES */
 
 .blackQueen{
     width: 50px;
-    background-image: url(../assets/resize.png);
+    background-image: url(../assets/img/resize.png);
     background-position: 250px 0px; 
 }
 
 .blackKing{
     z-index: 3;
     width: 50px;
-    background-image: url(../assets/resize.png);
+    background-image: url(../assets/img/resize.png);
     background-position: 0px 0px;
 }
 
-.blackCastle{
+.blackTower{
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 200px 0px;
 }
 
 .blackHorse{
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 150px 0px;
 }
 
 .blackElephant{
     width: 50px;
-    background-image: url(../assets/resize.png);
+    background-image: url(../assets/img/resize.png);
     background-position: 100px 0px;
 }
 
 .blackPawn{
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 50px 0px;
 }
 
 .whiteQueen{
     z-index: 3;
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 250px 50px;
 }
 
 .whiteKing{
     z-index: 3;
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 0px 50px;
 }
 
-.whiteCastle{
+.whiteTower{
     z-index: 3;
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 200px 50px;
 }
 
 .whiteHorse{
     z-index: 3;
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 150px 50px;
 }
 
 .whiteElephant{
     z-index: 3;
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 100px 50px;
 }
 
 .whitePawn{
     z-index: 3;
     width: 50px;
-    background-image: url(../assets/resize.png); 
+    background-image: url(../assets/img/resize.png); 
     background-position: 50px 50px;
 }

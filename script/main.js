@@ -84,6 +84,7 @@ function addLine(line){
                     switch(i){
                         case 2:
                             newPosition.classList.add('whiteCastle');
+                            newPosition.draggable = true;
                             break;
                         case 3:
                             newPosition.classList.add('whiteHorse');

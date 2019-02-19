@@ -106,7 +106,7 @@
             "name" : "White Horse 1",
             "row" : 9,
             "col" : 3,
-            "figure" : "WhiteTower"
+            "figure" : "whiteHorse"
         },
         "18" : {
             "name" : "White Elephant 1",

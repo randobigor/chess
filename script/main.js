@@ -1,31 +1,26 @@
-var xmlhttp = new XMLHttpRequest();
-var url = "../assets/db/positions.json";
-
-let pos;
-
-xmlhttp.onreadystatechange = function() {
-if (this.readyState == 4 && this.status == 200) {
-    pos = JSON.parse(this.responseText);
-    console.log(pos)
-    }
-};
-
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
+function Fetching(){
+    fetch("../assets/db/positions.json").then(response => {
+        return response.json();
+      }).then(data => {
+          drawTable(data);
+      }).catch(err => {
+        console.log("JSON was'nt poisoned");
+    });
+}
 
 window.onload = function () {
-    drawTable();
+    Fetching();
 }
 
 function drawTable(pos){
 	for (let row = 1; row <= 10; row++) {
-		addrow(row);
+		addrow(row, pos);
 	}
 }
-
+    
 let letters = ["A", "B", "C", "D", "E", "F", "G", "H"];
 
-function addrow(row){
+function addrow(row, pos){
 	let whiteColor = true;
 	if(row % 2 === 0){
 		whiteColor = false;
@@ -45,7 +40,7 @@ function addrow(row){
             document.getElementById('table').appendChild(newPosition);
             whiteColor = !whiteColor;         
             
-            setPositions(row, col, newPosition);
+            if(pos != '')setPositions(row, col, newPosition, pos);
         }
 	}	
 }
@@ -74,7 +69,7 @@ function drawSymbols(row, col){
     }
 }
 
-function setPositions(row, col, newPosition){
+function setPositions(row, col, newPosition, pos){
     for(let j = 0; j < 32; j++){
         if((pos[0][j]['row'] == row) && (pos[0][j]['col'] == col)){
             newPosition.classList.add(pos[0][j]['figure']);

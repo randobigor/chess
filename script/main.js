@@ -1,16 +1,16 @@
-// function Fetching(){
-//     fetch("assets/db/positions.json").then(response => {
-//         return response.json();
-//       }).then(data => {
-//           drawTable(data);
-//       }).catch(err => {
-//         console.log("JSON was'nt poisoned");
-//     });
-// }
+function Fetching(){
+    fetch("assets/db/positions.json").then(response => {
+        return response.json();
+      }).then(data => {
+          drawTable(data);
+      }).catch(err => {
+        console.log("JSON was'nt poisoned");
+    });
+}
 
 window.onload = function () {
-    // Fetching();
-    drawTable();
+    Fetching();
+    // drawTable();
 }
 
 function drawTable(pos){
@@ -41,7 +41,7 @@ function addrow(row, pos){
             document.getElementById('table').appendChild(newPosition);
             whiteColor = !whiteColor;         
             
-            // if(pos != '')setPositions(row, col, newPosition, pos);
+            if(pos != '')setPositions(row, col, newPosition, pos);
         }
 	}	
 }
@@ -73,8 +73,11 @@ function drawSymbols(row, col){
 function setPositions(row, col, newPosition, pos){
     for(let j = 0; j < 32; j++){
         if((pos[0][j]['row'] == row) && (pos[0][j]['col'] == col)){
-            newPosition.classList.add(pos[0][j]['figure']);
-            newPosition.draggable = true;
+            let newFigure = document.createElement('div')
+            newFigure.classList.add(pos[0][j]['figure']);
+            newFigure.classList.add('position');
+            newFigure.draggable = true;
+            newPosition.appendChild(newFigure);
         }
     }
 }

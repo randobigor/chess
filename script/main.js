@@ -77,3 +77,5 @@ function setPositions(row, col, newPosition, pos){
         }
     }
 }
+
+// new

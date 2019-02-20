@@ -1,15 +1,16 @@
-function Fetching(){
-    fetch("assets/db/positions.json").then(response => {
-        return response.json();
-      }).then(data => {
-          drawTable(data);
-      }).catch(err => {
-        console.log("JSON was'nt poisoned");
-    });
-}
+// function Fetching(){
+//     fetch("assets/db/positions.json").then(response => {
+//         return response.json();
+//       }).then(data => {
+//           drawTable(data);
+//       }).catch(err => {
+//         console.log("JSON was'nt poisoned");
+//     });
+// }
 
 window.onload = function () {
-    Fetching();
+    // Fetching();
+    drawTable();
 }
 
 function drawTable(pos){
@@ -40,7 +41,7 @@ function addrow(row, pos){
             document.getElementById('table').appendChild(newPosition);
             whiteColor = !whiteColor;         
             
-            if(pos != '')setPositions(row, col, newPosition, pos);
+            // if(pos != '')setPositions(row, col, newPosition, pos);
         }
 	}	
 }

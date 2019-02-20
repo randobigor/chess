@@ -1,5 +1,5 @@
 function Fetching(){
-    fetch('..chess/assets/db/positions.json').then(response => {
+    fetch('https://github.com/randobigor/chess/blob/master/assets/db/positions.json').then(response => {
         return response.json();
       }).then(data => {
           drawTable(data);

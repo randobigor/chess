@@ -41,7 +41,7 @@ function addrow(row, pos){
             document.getElementById('table').appendChild(newPosition);
             whiteColor = !whiteColor;         
             
-            if(pos != '')setPositions(row, col, newPosition, pos);
+            setPositions(row, col, newPosition, pos);
         }
 	}	
 }

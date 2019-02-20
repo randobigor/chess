@@ -3,17 +3,20 @@ function Fetching(){
         return response.json();
       }).then(data => {
           drawTable(data);
+          console.log("Response was successful")
       }).catch(err => {
         console.log("JSON was'nt poisoned");
     });
 }
 
 window.onload = function () {
+    console.log("Window was loaded!")
     Fetching();
     // drawTable();
 }
 
 function drawTable(pos){
+    console.log("drawTable Function")
 	for (let row = 1; row <= 10; row++) {
 		addrow(row, pos);
 	}
@@ -22,6 +25,7 @@ function drawTable(pos){
 let letters = ["A", "B", "C", "D", "E", "F", "G", "H"];
 
 function addrow(row, pos){
+    console.log("addRow function")
 	let whiteColor = true;
 	if(row % 2 === 0){
 		whiteColor = false;
@@ -47,6 +51,7 @@ function addrow(row, pos){
 }
 
 function drawSymbols(row, col){
+    console.log("drawSymbols function")
     let newPosition = document.createElement('div');
     if(row === 1 || row === 10){
         if(col != 1 && col != 10){
@@ -71,6 +76,7 @@ function drawSymbols(row, col){
 }
 
 function setPositions(row, col, newPosition, pos){
+    console.log("setPositions function")
     for(let j = 0; j < 32; j++){
         if((pos[0][j]['row'] == row) && (pos[0][j]['col'] == col)){
             let newFigure = document.createElement('div')

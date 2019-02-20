@@ -1,5 +1,5 @@
 function Fetching(){
-    fetch('../assets/db/positions.json').then(response => {
+    fetch("../assets/db/positions.json").then(response => {
         return response.json();
       }).then(data => {
           drawTable(data);
